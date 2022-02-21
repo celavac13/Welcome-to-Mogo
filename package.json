@@ -1,0 +1,22 @@
+{
+  "name": "welcome-to-mogo",
+  "version": "1.0.0",
+  "description": "Advanced css practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celavac13/Welcome-to-Mogo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/celavac13/Welcome-to-Mogo/issues"
+  },
+  "homepage": "https://github.com/celavac13/Welcome-to-Mogo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
