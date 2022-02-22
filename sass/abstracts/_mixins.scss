@@ -1,0 +1,12 @@
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin centeredGrid {
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 120rem) 1fr;
+    grid-template-rows: min-content 1fr min-content;
+}
