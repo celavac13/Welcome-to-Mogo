@@ -1,0 +1,70 @@
+.quote-background {
+    background-color: #f8f8f8;
+}
+
+.quote {
+    max-width: 120rem;
+    margin: 12rem auto;
+    height: 28rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__icon {
+        width: 1.4rem;
+        height: 1.4rem;
+        fill: #999999;
+
+        &--left {
+            transform: rotate(90deg);
+        }
+
+        &--right {
+            transform: rotate(270deg);
+        }
+
+        &--box {
+            padding: 4.3rem;
+            border: 2px solid #95e1d3;
+        }
+
+        &--chat {
+            width: 6.8rem;
+            height: 6.8rem;
+            fill: #95e1d3;
+        }
+    }
+
+    &__text-box {
+        max-width: 63%;
+    }
+
+    &__text {
+        font-size: 2.4rem;
+        color: #999999;
+        font-style: italic;
+        line-height: 1.5;
+    }
+
+    &__name-box {
+        position: relative;
+        margin-top: 2rem;
+        &::before {
+            content: "";
+            width: 6rem;
+            position: absolute;
+            border-bottom: 2px solid $color-primary;
+            top: 50%;
+            left: 0;
+        }
+
+        .heading-3 {
+            position: absolute;
+            top: 50%;
+            left: 7rem;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+  

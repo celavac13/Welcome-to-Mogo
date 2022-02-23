@@ -185,14 +185,14 @@
             position: absolute;
             top: -3px;
             left: 0;
+            transition: all 0s;
 
-
-            transition-delay: 2s;
         }
 
         &:hover::before {
             animation: sliderAnimation 2s;
             width: 100%;
+            transition: width 0s linear 2s;
         }
     }
 }
