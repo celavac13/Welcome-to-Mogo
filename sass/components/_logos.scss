@@ -1,0 +1,18 @@
+.logos {
+    height: 25rem;
+    margin-top: 12rem;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__box {
+        max-width: 120rem;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

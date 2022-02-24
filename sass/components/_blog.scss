@@ -1,0 +1,104 @@
+.blog {
+    @include centeredGrid;
+    justify-items: center;
+    padding: 8rem 0;
+
+    .heading-3 {
+        @include pos-h3;
+        grid-column: 2 / 3;
+    }
+
+    .heading-2 {
+        @include pos-h2;
+        grid-column: 2 / 3;
+    }
+
+    &__content {
+        grid-column: 2 / 3;
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            position: relative;
+
+            &__date-box {
+                width: 6rem;
+                height: 7rem;
+                position: absolute;
+                left: -1rem;
+                top: 16rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #95e1d3;
+
+                span {
+                    font-size: 3rem;
+                    font-family: $font-secondary;
+                    color: #fff;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    font-family: $font-secondary;
+                    font-style: italic;
+                    color: #fff;
+                    font-weight: 400;
+                }
+
+            }
+
+            .heading-4 {
+                margin-top: 1.5rem;
+            }
+
+            &--text {
+                margin-top: 1rem;
+                font-size: 1.5rem;
+                color: #999999;
+                line-height: 1.6;
+                width: 38rem;
+            }
+
+            &__svg-box{
+                display: flex;
+                width: 100%;
+                margin-top: 1rem;
+                padding-top: 1rem;
+                border-top: 1px solid #e5e5e5;
+                align-items: center;
+                justify-content: flex-start;
+
+                & > * {
+                    display: inline-block;
+                }
+
+                &--icon {
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    fill: #95e1d3;
+                    margin-right: .5rem;
+                }
+                
+                p {
+                    font-size: 1.5rem;
+                    color: #999999;
+                    font-style: italic;
+                    line-height: 1.6;
+
+                    &:not(:last-child) {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+  
+  

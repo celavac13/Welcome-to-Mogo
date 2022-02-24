@@ -1,0 +1,35 @@
+.map {
+    background-image: linear-gradient(
+        rgba(#fff, .7),
+        rgba(#fff, .7)),
+        url(../img/mappicture.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $color-primary;
+
+    &--icon {
+        width: 2.6rem;
+        height: 2.6rem;
+        fill: $color-primary;
+        margin-bottom: 1rem;
+    }
+
+    &--text {
+        font-size: 2.4rem;
+        font-family: $font-secondary;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__underline {
+        width: 6rem;
+        padding: .7rem;
+        border-bottom: 3px solid $color-primary;
+    }
+}

@@ -1,0 +1,78 @@
+.people-say {
+    @include centeredGrid;
+    grid-template-rows: 1fr repeat(3, min-content) 1fr;
+    justify-items: center;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(#fff, 0.7), 
+        rgba(#fff, 0.7)), 
+        url(../img/peoplebackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 43.2295vw;
+
+    & > * {
+        grid-column: 2 / 3;
+    }
+
+    .heading-3 {
+        grid-row: 2 / 3;
+        @include pos-h3;
+    }
+
+    .heading-2 {
+        grid-row: 3 / 4;
+        @include pos-h2;
+    }
+
+    &__peoples {
+        grid-row: 4 / 5;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-row-gap: 7rem;
+    }
+
+    &__member {
+        max-width: 52rem;
+        display: grid;
+        grid-template-columns: min-content 1fr;
+
+        &--img {
+            grid-row: 1 / span 3;
+            margin-right: 3rem;
+        }
+
+        &--heading-4 {
+            padding-top: 1rem;
+            position: relative;
+            &::before{
+                content: "";
+                width: 6rem;
+                position: absolute;
+                left: 0;
+                top: 7.5rem;
+                border-bottom: 2px solid $color-primary;
+            }
+        }
+
+        &--span {
+            font-size: 1.5rem;
+            color: #333333;
+            font-style: italic;
+            line-height: 1.6;
+            padding-top: 1rem;
+        }
+
+        &--text {
+            font-size: 1.5rem;
+            color: #999999;
+            line-height: 1.6;
+            padding-top: 3rem;
+        }
+    }
+}
+
+  
