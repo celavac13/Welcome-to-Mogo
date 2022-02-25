@@ -1,6 +1,7 @@
 .service-2 {
     @include centeredGrid;
     justify-items: center;
+    padding-top: 10.7rem;
 
     .heading-3,
     .heading-2,
@@ -16,22 +17,11 @@
     }
 
     .heading-3 {
-        margin-top: 11rem;
-        margin-bottom: 1rem;
+        @include pos-h3;
     }
 
     .heading-2 {
-        position: relative;
-        margin-bottom: 6.5rem;
-        &::before {
-            content: "";
-            width: 6rem;
-            border-bottom: 3px solid $color-primary;
-            position: absolute;
-            top: 200%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+        @include pos-h2;
     }
 
     &__text {
@@ -39,7 +29,7 @@
         font-size: 1.5rem;
         color: #999999;
         line-height: 1.6;
-        margin-bottom: 7rem;
+        margin-bottom: 8.5rem;
     }
 
     &__box {
@@ -47,7 +37,7 @@
         justify-content: space-between;
         width: 100%;
 
-        &--img {
+        &__img {
             height: 38rem;
             width: auto;
         }
@@ -69,17 +59,17 @@
                 margin-bottom: .7rem;
             }
 
-            &--icon {
+            &__icon {
                 width: 3rem;
                 height: 3rem;
                 fill: #95e1d3;
             }
 
-            &--icon--1 {
+            &__icon--1 {
                 grid-column: 1 / 2;
             }
 
-            &--text {
+            &__text {
                 grid-column: 1 / 3;
                 border-bottom: 1px solid #e5e5e5;
                 padding: 1rem;
@@ -90,10 +80,10 @@
                 line-height: 1.6;
             }
 
-            &--icon--2 {
+            &__icon--2 {
                 grid-column: 3 / 4;
-                width: 1.4rem;
-                height: 1.4rem;
+                width: 2rem;
+                height: 2rem;
                 fill: #999999;
             }
             .arrow-up {

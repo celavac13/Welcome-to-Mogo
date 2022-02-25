@@ -11,32 +11,36 @@
     align-items: center;
 
     &__icon {
-        width: 1.4rem;
-        height: 1.4rem;
+        width: 2rem;
+        height: 2rem;
         fill: #999999;
 
-        &--left {
+        &__left {
             transform: rotate(90deg);
+            margin-left: 1.8rem;
         }
 
-        &--right {
+        &__right {
             transform: rotate(270deg);
+            margin-right: 1.8rem;
         }
 
-        &--box {
-            padding: 4.3rem;
-            border: 2px solid #95e1d3;
+        &__box {
+            padding: 3.8rem;
+            border: 3px solid #95e1d3;
+            transform: translateX(-1.3rem);
         }
 
-        &--chat {
-            width: 6.8rem;
-            height: 6.8rem;
+        &__chat {
+            width: 6.7rem;
+            height: 6.7rem;
             fill: #95e1d3;
         }
     }
 
     &__text-box {
         max-width: 63%;
+        margin-left: -4rem;
     }
 
     &__text {
@@ -48,7 +52,7 @@
 
     &__name-box {
         position: relative;
-        margin-top: 2rem;
+        margin-top: 3rem;
         &::before {
             content: "";
             width: 6rem;

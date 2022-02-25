@@ -1,7 +1,8 @@
 .blog {
     @include centeredGrid;
     justify-items: center;
-    padding: 8rem 0;
+    padding: 11rem 0;
+    margin-bottom: .2rem;
 
     .heading-3 {
         @include pos-h3;
@@ -11,6 +12,7 @@
     .heading-2 {
         @include pos-h2;
         grid-column: 2 / 3;
+        margin-bottom: 8.6rem;
     }
 
     &__content {
@@ -49,27 +51,29 @@
                     font-style: italic;
                     color: #fff;
                     font-weight: 400;
+                    margin-top: -.5rem;
                 }
 
             }
 
             .heading-4 {
-                margin-top: 1.5rem;
+                margin-top: 1.6rem;
             }
 
-            &--text {
+            &__text {
                 margin-top: 1rem;
+                margin-bottom: 1.9rem;
                 font-size: 1.5rem;
                 color: #999999;
                 line-height: 1.6;
                 width: 38rem;
             }
 
-            &__svg-box{
+            &__svg-box {
                 display: flex;
                 width: 100%;
                 margin-top: 1rem;
-                padding-top: 1rem;
+                padding-top: 1.2rem;
                 border-top: 1px solid #e5e5e5;
                 align-items: center;
                 justify-content: flex-start;
@@ -78,11 +82,11 @@
                     display: inline-block;
                 }
 
-                &--icon {
+                &__icon {
                     width: 1.8rem;
                     height: 1.8rem;
                     fill: #95e1d3;
-                    margin-right: .5rem;
+                    margin-right: .7rem;
                 }
                 
                 p {
@@ -92,7 +96,7 @@
                     line-height: 1.6;
 
                     &:not(:last-child) {
-                        margin-right: 1rem;
+                        margin-right: 1.8rem;
                     }
                 }
             }

@@ -1,7 +1,7 @@
 .map {
     background-image: linear-gradient(
-        rgba(#fff, .7),
-        rgba(#fff, .7)),
+        rgba(#fff, .8),
+        rgba(#fff, .8)),
         url(../img/mappicture.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -13,14 +13,14 @@
     flex-direction: column;
     color: $color-primary;
 
-    &--icon {
+    &__icon {
         width: 2.6rem;
         height: 2.6rem;
         fill: $color-primary;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
-    &--text {
+    &__text {
         font-size: 2.4rem;
         font-family: $font-secondary;
         font-weight: 700;
@@ -29,7 +29,7 @@
 
     &__underline {
         width: 6rem;
-        padding: .7rem;
+        padding: .9rem;
         border-bottom: 3px solid $color-primary;
     }
 }

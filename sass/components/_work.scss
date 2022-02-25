@@ -1,25 +1,15 @@
 .work {
+    padding-top: 10.7rem;
     text-align: center;
     .heading-3 {
-        margin-top: 12rem;
-        margin-bottom: 2rem;
+        @include pos-h3;
     }
 
     .heading-2 {
-        position: relative;
-        margin-bottom: 9rem;
-        &::before {
-            content: "";
-            width: 6rem;
-            border-bottom: 3px solid $color-primary;
-            position: absolute;
-            top: 200%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+        @include pos-h2;
     }
 
-    &--text {
+    &__text {
         max-width: 96rem;
         margin: 0 auto;
         font-size: 1.5rem;
@@ -42,8 +32,10 @@
 
             &__content {
                 @include absCenter;
+                transform: translate(-50%, -50%);
                 width: 100%;
                 height: 100%;
+                padding-top: 2rem;
                 background-image: linear-gradient(
                     to bottom,
                     rgba($color-primary, .9),
@@ -57,9 +49,9 @@
                 opacity: 0;
                 transition: all .2s;
 
-                &--icon {
-                    width: 3.5rem;
-                    height: 3.5rem;
+                &__icon {
+                    width: 3rem;
+                    height: 3rem;
                     fill: #fff;
                     margin-bottom: 2rem;
                 }
@@ -107,7 +99,7 @@
                 grid-row: 1 / 2;
             }
 
-            &--img {
+            &__img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;

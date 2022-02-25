@@ -1,5 +1,5 @@
 .services {
-    padding: 11rem 0;
+    padding: 11rem 0 7.8rem 0;
     @include centeredGrid;
 
     .heading-3,
@@ -10,30 +10,18 @@
 
     .heading-3 { 
         text-align: center;
-        margin-bottom: .7rem;
+        @include pos-h3;
     }
 
     .heading-2 {
         text-align: center;
-        position: relative;
-        margin-bottom: 5rem;
-        &::before {
-            content: "";
-            width: 6rem;
-            border-bottom: 3px solid $color-primary;
-            position: absolute;
-            top: 200%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+        @include pos-h2;
+        margin-bottom: 4.8rem;
     }
 
     &__content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-        // display: flex;
-        // flex-wrap: wrap;
-        // justify-content: space-around;
         position: relative;
 
         &::before {
@@ -42,24 +30,25 @@
             width: 100%;
             border-bottom: 1px solid #e5e5e5;
             @include absCenter;
+            top: 52%
         }
 
         &__item {
             display: grid;
             grid-template-columns: min-content 1fr;
-            grid-row-gap: 1.5rem;
-            grid-column-gap: 2.5rem;
+            grid-row-gap: 1.2rem;
+            grid-column-gap: 2.7rem;
             padding: 0 2.9rem;
-            margin: 5rem 0;
+            margin: 5.5rem 0 4rem 0;
 
-            &--icon {
+            &__icon {
                 width: 3.4rem;
                 height: 3.4rem;
                 fill: #95e1d3;
                 grid-row: 1 / span 2;
             }
 
-            &--text {
+            &__text {
                 font-size: 1.5rem;
                 color: #999999;
                 line-height: 1.6;

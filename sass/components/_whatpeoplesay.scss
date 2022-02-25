@@ -1,8 +1,8 @@
 .people-say {
     @include centeredGrid;
-    grid-template-rows: 1fr repeat(3, min-content) 1fr;
     justify-items: center;
-    align-items: center;
+    align-content: start;
+    padding-top: 10.7rem;
     background-image: linear-gradient(
         rgba(#fff, 0.7), 
         rgba(#fff, 0.7)), 
@@ -17,17 +17,16 @@
     }
 
     .heading-3 {
-        grid-row: 2 / 3;
         @include pos-h3;
+        margin-bottom: 1.5rem
     }
 
     .heading-2 {
-        grid-row: 3 / 4;
         @include pos-h2;
+        margin-bottom: 12.3rem;
     }
 
     &__peoples {
-        grid-row: 4 / 5;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -40,12 +39,12 @@
         display: grid;
         grid-template-columns: min-content 1fr;
 
-        &--img {
+        &__img {
             grid-row: 1 / span 3;
             margin-right: 3rem;
         }
 
-        &--heading-4 {
+        &__heading-4 {
             padding-top: 1rem;
             position: relative;
             &::before{
@@ -53,24 +52,24 @@
                 width: 6rem;
                 position: absolute;
                 left: 0;
-                top: 7.5rem;
+                top: 7rem;
                 border-bottom: 2px solid $color-primary;
             }
         }
 
-        &--span {
+        &__span {
             font-size: 1.5rem;
             color: #333333;
             font-style: italic;
             line-height: 1.6;
-            padding-top: 1rem;
+            padding-top: .5rem;
         }
 
-        &--text {
+        &__text {
             font-size: 1.5rem;
             color: #999999;
             line-height: 1.6;
-            padding-top: 3rem;
+            padding-top: 3.5rem;
         }
     }
 }

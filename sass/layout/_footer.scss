@@ -1,0 +1,212 @@
+.footer {
+    @include centeredGrid;
+
+    & > * {
+        grid-column: 2 / 3;
+    }
+
+    &__content {
+        margin: 8rem 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+
+        & > * {
+            height: 350px;
+        }
+
+        &__logo-box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex: 0 0 47.5rem;
+
+            &__logo {
+                font-size: 1.8rem;
+                font-family: $font-secondary;
+                color: #cccccc;
+                font-weight: 700;
+                -moz-transform: matrix( 2.58218770784548,0,0,2.58218770784548,0,0);
+                -webkit-transform: matrix( 2.58218770784548,0,0,2.58218770784548,0,0);
+                -ms-transform: matrix( 2.58218770784548,0,0,2.58218770784548,0,0);
+                transform: matrix( 2.58218770784548,0,0,2.58218770784548,0,0);
+                margin-left: 4rem;
+            }
+
+            &__text {
+                font-size: 1.5rem;
+                margin-top: 2.5rem;
+                color: #999999;
+                line-height: 1.6;
+                text-align: left;
+                margin-bottom: 1.4rem;
+            }
+
+            &__heading-4 {
+                font-size: 1.5rem;
+                font-family: $font-secondary;
+                color: #333333;
+                text-align: left;
+                margin-top: 2rem;
+                padding-bottom: 1.5rem;
+                width: 100%;
+                border-bottom: 1px solid #e5e5e5;
+                span {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                }
+            }
+
+            &__socials {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 1.5rem;
+                
+
+                p {
+                    display: inline-block;
+                    font-size: 1.5rem;
+                    color: #999999;
+                    font-style: italic;
+                    line-height: 1.6;
+                    margin-right: .8rem;
+                }
+
+                &__icon {
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    fill: #95e1d3;
+                    display: inline-block;
+                    margin-left: 1.1rem;
+                }
+            }
+
+            &__form {
+                input {
+                    font-size: 1.5rem;
+                    width: 23rem;
+                    color: #cccccc;
+                    font-style: italic;
+                    line-height: 1.6;
+                    font-family: inherit;
+                    border: 1px solid #999999;
+                    border-right: none;
+                    border-top-left-radius: 2px;
+                    border-bottom-left-radius: 2px;
+                    padding: .7rem 1.8rem;
+                    margin-bottom: 2px;
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0 1rem 2rem rgba(#000, .1);
+                    }
+                }
+
+                button {
+                    border: 1px solid #95e1d3;
+                    width: 15rem;
+                    height: 4rem;
+                    margin-left: -2px;
+                    font-size: 1.4rem;
+                    font-family: $font-secondary;
+                    color: #fff;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    background-color: #95e1d3;
+                }
+            }
+        }
+
+        &__blog-box {
+            flex: 0 0 36rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: -3rem;
+            
+            &__item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                &__text-box {
+                    padding-left: 2rem;
+                    margin-top: 2rem;
+                }
+                .heading-4 {
+                    font-size: 1.2rem;
+                    color: #333333;
+                    line-height: 1.5;
+                }
+
+                &__text {
+                    font-size: 1.3rem;
+                    color: #999999;
+                    font-style: italic;
+                    line-height: 1.846;
+                }
+            }
+        }
+
+        &__instagram-box {
+            flex: 0 0 27rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            &__gallery {
+                margin-top: 2rem;
+                display: grid;
+                grid-template-columns: repeat(3, min-content);
+                grid-template-rows: repeat(3, min-content);
+                grid-column-gap: 3px;
+                grid-row-gap: 2px;
+            }
+
+            &__link {
+
+                &:link,
+                &:visited {
+                    font-size: 1.3rem;
+                    color: #333333;
+                    font-style: italic;
+                    line-height: 1.846;
+                    text-decoration: none;
+                    transition: all .2s;
+                    margin-bottom: -5px;
+                }
+
+                &:hover {
+                    box-shadow: 0 1rem 2rem rgba(#000, .15);
+                    transform: translateY(-2px);
+                    border-radius: 3px;
+                }
+
+                &:active {
+                    transform: translateY(0);
+                }
+
+            }
+        }
+    }
+
+    &__copyright {
+        width: 100%;
+        padding: 2rem 0;
+        margin-top: -1rem;
+        border-top: 1px solid #e5e5e5;
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: $font-secondary;
+        color: #333333;
+        span {
+            color: $color-primary;
+        }
+    }
+}
+

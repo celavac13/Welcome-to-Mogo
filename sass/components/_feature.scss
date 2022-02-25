@@ -7,34 +7,26 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 10.6rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
     .heading-3 {
-        margin-top: 11rem;
+        @include pos-h3;
     }
 
     .heading-2 {
-        margin-top: -3rem;
-        position: relative;
-        &::before {
-            content: "";
-            width: 6rem;
-            border-bottom: 3px solid $color-primary;
-            position: absolute;
-            top: 200%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+        @include pos-h2;
+        margin-bottom: 4.6rem;
     }
 
     &__image-box {
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        margin-right: -23rem;
+        margin-right: -22.5rem;
 
         .img-2 {
             transform: translate(-16.5rem, 9rem);
