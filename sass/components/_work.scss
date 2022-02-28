@@ -23,6 +23,11 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 20.313vw);
 
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 40vw);
+        }
+
         &__item {
             position: relative;
             &:hover &__content{
@@ -97,6 +102,38 @@
             &--6 {
                 grid-column: 4 / 5;
                 grid-row: 1 / 2;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                &--1 {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                }
+    
+                &--2 {
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                }
+    
+                &--3 {
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                }
+    
+                &--4 {
+                    grid-column: 2 / 3;
+                    grid-row: 2 / 3;
+                }
+    
+                &--5 {
+                    grid-column: 1 / 2;
+                    grid-row: 3 / 5;
+                }
+    
+                &--6 {
+                    grid-column: 2 / 3;
+                    grid-row: 3 / 4;
+                }
             }
 
             &__img {

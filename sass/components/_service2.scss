@@ -92,6 +92,8 @@
                 font-style: italic;
                 text-align: left;
                 line-height: 1.6;
+                max-height: 160px;
+                overflow: auto;
             }
 
             &__icon--2 {
