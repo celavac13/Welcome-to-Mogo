@@ -10,7 +10,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 43.2295vw;
+    height: 83rem;
+
+    @media only screen and (max-width: $bp-small) {
+        height: max-content;
+    }
 
     & > * {
         grid-column: 2 / 3;
@@ -32,12 +36,20 @@
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         grid-row-gap: 7rem;
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__member {
         max-width: 52rem;
         display: grid;
         grid-template-columns: min-content 1fr;
+
+        &:last-child {
+            margin-bottom: 5rem;
+        }
 
         &__img {
             grid-row: 1 / span 3;

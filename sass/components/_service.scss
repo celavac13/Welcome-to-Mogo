@@ -30,7 +30,11 @@
             width: 100%;
             border-bottom: 1px solid #e5e5e5;
             @include absCenter;
-            top: 52%
+            top: 52%;
+
+            @media only screen and (max-width: 839px) {
+                display: none;
+            }
         }
 
         &__item {

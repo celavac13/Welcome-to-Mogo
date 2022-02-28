@@ -37,14 +37,28 @@
         justify-content: space-between;
         width: 100%;
 
+        @media only screen and (max-width: $bp-medium) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         &__img {
             height: 38rem;
             width: auto;
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 80%;
+                height: auto;
+            }
         }
     }
 
     &__content {
         max-width: 50%;
+        @media only screen and (max-width: $bp-medium) {
+            max-width: 80%;
+        }
+
         &__item {
             display: grid;
             grid-template-columns: min-content 1fr min-content;

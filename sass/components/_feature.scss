@@ -13,6 +13,18 @@
     justify-content: flex-start;
     align-items: center;
 
+    @media only screen and (max-width: $bp-large) {
+        height: 100.2rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        height: 108.8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        height: max-content;
+    }
+
     .heading-3 {
         @include pos-h3;
     }
@@ -27,9 +39,20 @@
         align-items: flex-end;
         justify-content: center;
         margin-right: -22.5rem;
+        @media only screen and (max-width: $bp-medium) {
+            margin-right: 0;
+        }
 
+        .img-1 {
+            max-width: 100%;
+            height: auto;
+        }
         .img-2 {
             transform: translate(-16.5rem, 9rem);
+            
+            @media only screen and (max-width: $bp-medium) {
+                display: none;
+            }
         }
     }
 

@@ -7,6 +7,11 @@
     background-size: cover;
     background-position: center;
     height: 100rem;
+
+    @media only screen and (max-width:$bp-smallest) {
+        height: 80rem;
+    }
+
     position: relative;
     color:#fff;
     @include centeredGrid;
@@ -21,6 +26,16 @@
     font-family: $font-secondary;
     color: #fff;
 
+    @media only screen and (max-width: $bp-smallest) {
+        height: min-content;
+        align-items: center;
+    }
+
+
+    @media only screen and (max-width: $bp-largest) {
+        padding: 0 1rem;
+    }
+
     &__logo {
         font-size: 3rem;
         font-weight: 700;
@@ -31,17 +46,38 @@
         display: flex;
         align-items: flex-end;
         margin-bottom: 3px;
+
+        @media only screen and (max-width: $bp-smallest) {
+            flex-direction: column;
+
+        }
     }
 
     &__item {
+
+        &:first-child {
+            @media only screen and (max-width: 530px) {
+                margin-left: 3rem;
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                margin-left: 0;
+            }
+        }
         &:not(:last-child) {
             margin-right: 5.5rem;
+
+            @media only screen and (max-width: $bp-smallest) {
+                margin-right: 0;
+            }
         }
 
         &:last-child {
             transform: translateY(7px);
             margin-left: -.3rem;
         }
+
+        
     }
 
     &__link {
@@ -62,6 +98,10 @@
         &:active {
             border-bottom: 3px solid $color-secondary;
             color: $color-secondary;
+
+            @media only screen and (max-width: $bp-smallest) {
+                border: none;
+            }
         }
     }
 
@@ -81,6 +121,10 @@
 
         &:not(:last-child) {
             margin-right: 3.9rem;
+
+            @media only screen and (max-width: 523px) {
+                margin-right: 2rem;
+            }
         }
     }
 }
@@ -100,6 +144,14 @@
         font-weight: 400;
         text-align: center;
         color: currentColor;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 5rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 4rem;
+        }
     }
 
     h1 {
@@ -147,8 +199,13 @@
 
 .slider-box {
     grid-column: 1 / -1;
+    align-self: end;
     display: grid;
     grid-template-columns: calc((100% - 120rem) / 2) 1fr;
+
+    @media only screen and (max-width: $bp-largest) {
+        padding: 0 1rem;
+    }
 
     &__container {
         grid-column: 2 / 3;

@@ -6,5 +6,13 @@ $font-heading: 'Kaushan Script', cursive;
 //setting up colors
 
 $color-primary: #f38181;
-
 $color-secondary: #fce38a;
+
+
+//media queries
+
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em //500px

@@ -29,6 +29,14 @@
             padding: 3.8rem;
             border: 3px solid #95e1d3;
             transform: translateX(-1.3rem);
+
+            @media only screen and (max-width: $bp-small) {
+                padding: 3.2rem;
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                border: none;
+            }
         }
 
         &__chat {
@@ -48,6 +56,10 @@
         color: #999999;
         font-style: italic;
         line-height: 1.5;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2rem;
+        }
     }
 
     &__name-box {
